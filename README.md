@@ -26,17 +26,17 @@ socket.close()
 ## The loan calculator will receive the message and return the months as a string, but is really an int
 ```python
 while True:
-		message = socket.recv_string()
-		if message == "exit":
-			print("Exiting...")
-			break
-		print("Received message: %s" % message)
-		# assuming the messages are received in the order: monthly payment, interest rate, loan amount
+	message = socket.recv_string()
+	if message == "exit":
+		print("Exiting...")
+		break
+	print("Received message: %s" % message)
+	# assuming the messages are received in the order: monthly payment, interest rate, loan amount
 
-		monthly_payment, interest_rate, loan_amount = message.split(" ")
-		months = loan_calculator(float(monthly_payment), float(interest_rate), float(loan_amount))
-		print("Months needed to pay off the loan: %d" % months)
-		socket.send_string(str(months))
+	monthly_payment, interest_rate, loan_amount = message.split(" ")
+	months = loan_calculator(float(monthly_payment), float(interest_rate), float(loan_amount))
+	print("Months needed to pay off the loan: %d" % months)
+	socket.send_string(str(months))
 ```
 
 # Communication Contract
