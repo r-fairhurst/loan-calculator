@@ -57,4 +57,5 @@ G. The only thing I worry about is the port-port connection, I just have it hard
 
 
 # UML Sequence diagram
+![Blank diagram](https://github.com/user-attachments/assets/e23679d0-df96-4e29-8430-a21c589a6a22)
 
