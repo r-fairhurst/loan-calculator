@@ -48,6 +48,7 @@ B.  This microservice is fully finished
 C. N/A
 
 D. Microservice should be ran locally, however it can receive messages from anywhere as long as it communicates to the correct port/IP address, you just have to change them
+   can be accessed here: https://github.com/r-fairhurst/loan-calculator
 
 E. If my teammates cannot access or call my microservice they should reach out over discord if any issues show up, I will try and troubleshoot/fix/address them that same day
 
